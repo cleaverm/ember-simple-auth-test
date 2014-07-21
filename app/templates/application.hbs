@@ -1,0 +1,9 @@
+<h2 id='title'>Welcome to Ember.js</h2>
+
+{{#if session.isAuthenticated}}
+  The application is logged in.
+{{else}}
+  The application is not logged in. Please load the app directly at the '/authcheck' route to demonstrate the issue.
+{{/if}}
+
+{{outlet}}
