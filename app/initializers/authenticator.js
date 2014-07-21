@@ -5,7 +5,7 @@ import CONFIG from 'simple-auth/configuration';
 var CustomAuthenticator = Base.extend({
   restore: function(data) {
     return new Ember.RSVP.Promise(function(resolve, reject) {
-      reject("Not persisting session after reload");
+      resolve({ someAuthData: true });
     });
   },
   authenticate: function(options) {
